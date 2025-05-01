@@ -1,0 +1,63 @@
+nano program1.csv
+
+more program1.csv
+
+ID,Name,age,salary,Department
+101,Alice,0,70000,Data Science
+102,Bob,25,50000,Engineering
+103,Charlie,5,80000,Data Science
+104,David,40,90000,HR
+105,Eve,28,60000,Engineering
+106,Frank,38,75000,HR
+107,Grace,27,72000,Data Science
+108,Hank,32,68000,Engineering
+109,Ivy,29,62000,Data Science
+110,Jack,31,71000,HR
+
+less program1.csv
+
+grep 'Engineering' pqr.csv
+
+head -5 pqr.csv
+
+tail -3 pqr.csv
+
+awk -F, '{print NF;exist}' pqr.csv
+
+awk -F, '{print NF;exit}' pqr.csv
+
+awk -F, '{print $3}' pqr.csv
+
+head -n7 pqr.csv | tail -n1
+
+tail -3 pqr.csv
+
+cut -d, -f4 pqr.csv
+
+awk -F, '{print $4}' pqr.csv
+
+awk -F, '{print $2 "," $3}' pqr.csv
+
+awk -F, '{print $2 "," $3}' pqr.csv > pqr2.csv
+
+more pqr2.csv
+
+awk -F, '{print $4}' pqr.csv | sort
+
+sort -t',' -k4,4n pqr.csv
+
+sort -t',' -k3,3nr pqr.csv
+
+sort -t',' -k4,4 -r pqr.csv
+
+sort -t',' -k2,2 | sort -t',' -k4,4 -r pqr.csv
+
+
+
+
+
+
+
+
+
+
